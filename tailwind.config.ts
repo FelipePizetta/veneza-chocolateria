@@ -9,9 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        mono: "--font-yanone-kaffeesatz",
-        sans: "--font-open-sans",
-        variable: "--font-pt-sans"
+        mono: ["var(--font-yanone-kaffeesatz)"],
+        sans: ["var(--font-open-sans)"],
+        serif: ["var(--font-pt-sans)"],
+        lato: ["var(--font-lato)"],
+      },
+      backgroundColor: {
+        "red-orange": "rgb(255, 36, 36)",
+      },
+      colors: {
+        "del-rio": "rgb(177, 154, 140)",
+        "carnation": "rgb(255, 110, 110)",
+        "sweet-pink": "rgb(255, 160, 160)",
+      },
+      backgroundImage: {
+        "hero": "url('../public/backgroundImage.png')"
       },
     },
   },

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { openSans, ptSans, yanoneKaffeesatz } from "@/lib/fonts";
+import { lato, openSans, ptSans, yanoneKaffeesatz } from "../lib/fonts";
 
 export const metadata: Metadata = {
   title: "Veneza Chocolateria | Chocolates, Doces Finos, Trufas e muito mais...",
@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${yanoneKaffeesatz.variable} ${ptSans.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${openSans.variable} ${yanoneKaffeesatz.variable} ${ptSans.variable} ${lato.variable} font-sans antialiased`}>
+        {children}
+        </body>
     </html>
   );
 }
