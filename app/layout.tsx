@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${openSans.variable} ${yanoneKaffeesatz.variable} ${ptSans.variable} ${lato.variable} font-sans antialiased`}>
+    <html className="!scroll-smooth" lang="en">
+      <body className={`${openSans.variable} ${yanoneKaffeesatz.variable} ${ptSans.variable} ${lato.variable} font-sans selection:bg-stiletto antialiased`}>
         {children}
         </body>
     </html>

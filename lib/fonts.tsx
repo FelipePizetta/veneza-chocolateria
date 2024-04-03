@@ -3,7 +3,7 @@ import { PT_Sans, Yanone_Kaffeesatz, Open_Sans, Lato } from "next/font/google";
 export const ptSans = PT_Sans({ 
     display: "swap", 
     subsets: ["latin"], 
-    weight: ["400", "700"], 
+    weight: ["400"], 
     variable: "--font-pt-sans" 
 });
 
